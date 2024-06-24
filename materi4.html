@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ari Yono | Media & Teknologi Pembelajaran</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+   
+    <link href='assets/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/main.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/animate-custom.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/tambah-font.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/tambah-modis.css' rel='stylesheet' type='text/css'>
+    <link href="assets/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" media="screen">
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="assets/js/jmodis.js"></script>
+    <script type="text/javascript" src="assets/fancybox/jquery.fancybox.pack.js"></script>
+    <script>
+    $(document).ready(function() {
+        //semua links dengam akhiran ekstensi gambar
+        var thumbnails = 'a[href$=".gif"],a[href$=".jpg"],a[href$=".jpeg"],a[href$=".png"],a[href$=".GIF"],a[href$=".JPG"],a[href$=".JPEG"],a[href$=".PNG"]';
+
+        //menambah class "fancybox" ke thumbnails dan dijadikan satu group "rel" untuk mengaktifkan tombol previous/next
+        jQuery(thumbnails).addClass("fancybox").attr("rel","lightbox");
+
+        //memanggil fancybox
+        jQuery('.fancybox').fancybox({
+            padding: 0,
+            //mendapatkan alt dari img untuk title fancybox
+            beforeShow : function() {
+                var alt = this.element.find('img').attr('alt');
+                this.inner.find('img').attr('alt', alt);
+                this.title = alt;
+            }
+        });
+    });
+    </script>
+</head>
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+
+<div id="navbar-main">
+    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="menuIcon"><i class="fa fa-lg fa-list-ul"></i> Menu</span>
+            </button>
+        <span class="navbar-brand logoModis"><img src="assets/img/topi.png" width="63" height="46" class="noBayang"></span>        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+                <li><a href="index.html"><i class="glyphicon glyphicon-home"></i>&nbsp; Home</a></li>
+                <li><a href="pembelajaran.html"><i class="glyphicon glyphicon-book"></i>&nbsp; Pembelajaran</a></li>
+                <li><a href="evaluasi-daftar.html"><i class="glyphicon glyphicon-list"></i>&nbsp; Evaluasi</a></li>
+        </div>
+    </div>
+    </div>
+</div>
+
+    <!--INFO AWAL-->
+	<div id="kbwrap" class="kbwrap01">
+		<div class="row">	
+			<h3 class="centered">Komponen Perangkat Media Penyimpanan</h3>
+			<br>
+		</div>
+	</div>
+	
+	<div class="container" id="kb01" name="kb01">
+		<br>
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8">
+			<div class="panel panel-default artikel" id="tujuan">
+				<div class="panel-body"> 
+                	
+					<h3 style="color: black; text-shadow: none;" class="page-header">Tujuan Pembelajaran</h3> 
+    				<p>Setelah kegiatan pembelajaran ini peserta didik diharapkan mampu:</p>
+					<ul>
+                        <li>Memahami komponen perangkat keras pada sistem komputer dengan baik.</li>
+                    </ul>
+                    <hr>
+                    <br><p class="gambar-tengah"><a class="btn btn-warning btn-sm smoothScroll" onclick="toggle('uraianMateri');" href="#uraianMateri">Lanjut ke Materi &raquo;</a></p>
+				</div>
+			</div>
+			
+			<div class="panel panel-default artikel" id="uraianMateri" style="display:none;">
+				<div class="panel-body">
+					<h3 class="page-header">Materi</h3>
+                    
+                    <div class="kb-row-container">
+                    <div class="kb-row" id="Jenis-jenisPengalamatanIPv4">
+    					<a href="#uraianMateri" class="kb-row-handle">Apa yang dimaksud dengan Perangkat Media Penyimpanan ?</a>
+    					<div class="kb-row-content">
+
+    						<p><strong>Komponen perangkat media penyimpanan</strong> ini berfungsi untuk menyimpan aplikasi, berkas, data, dan lain-lain. Kita dapat menyadari bagaimana sebuah berkas dapat kalian kelola seperti menduplikasi, memindahkan, atau menghapusnya.</p>
+
+
+    					</div>
+    				</div>
+    				
+    				<div class="kb-row" id="Jenis-jenis alamat">
+    					<a href="#Jenis-jenisPengalamatanIPv4" class="kb-row-handle">Contoh Perangkat Media Penyimpanan</a>
+    					<div class="kb-row-content">
+                            <p>Berikut beberapa perangkat media penyimpanan yang perlu kalian ketahui</p><br>
+                            <p><strong>1.Hard Drive</strong>, Hard Drive adalah perangkat penyimpanan yang biasa digunakan untuk menyimpan data pada sebuah komputer. Perlu diketahui sebuah sistem operasi juga tersimpan pada Hard Drive. Jika kalian mengenali sebuah komputer terdapat nama partisi seperti Local Disk C, D, dan seterusnya, merupakan salah satu pembagian kapasitas pada Hard Drive. <br>Hard Drive ini memiliki jenis sebagai berikut.<br>
+                            <strong>Parallel Advanced Technology Attachment (PATA)</strong> <br>
+                            PATA menggunakan kabel 40 atau 80 kawat dengan konektor 40-pin. Di mana 40 kabel kawat yang digunakan dalam hard disk lebih tua dan cenderung lebih lambat. Saat ini, PATA memang banyak digantikan dengan hard disk SATA. <br>
+                            <figure class="gambar-tengah img-responsive">
+                                <a href="assets/img/materi4/pata.png"><img src="assets/img/materi4/pata.png" class="img-responsive tengah" width="300px" alt="PATA" title="PATA"></a>
+                                <figcaption>Gambar 1. &nbsp;&nbsp; PATA</figcaption>
+                            </figure>
+
+                            <strong>PSerial Advanced Technology Attachment (SATA)</strong> <br>
+                            SATA menggunakan konektor sangat berbeda jika dengan PATA. SATA juga menggunakan adaptor daya yang berbeda dari PATA. Perbedaan utama antara hard disk jenis SATA ini lebih kecil dan tipis dibanding dengan PATA sehingga lebih fleksibel bentuknya. Namun perlu diketahui dalam membandingkan kecepatan antara PATA dan SATA ini kurang lebih sebenarnya memiliki peringkat RPM yang sama. SATA dan SATA umumnya berputar dengan kecepatan 7.200 rpm.<br>
+                            <figure class="gambar-tengah img-responsive">
+                                <a href="assets/img/materi4/sata.png"><img src="assets/img/materi4/sata.png" class="img-responsive tengah" width="300px" alt="SATA" title="SATA"></a>
+                                <figcaption>Gambar 2. &nbsp;&nbsp; SATA</figcaption>
+                            </figure>
+
+                            <strong>Solid State Drives (SSD)</strong> <br>
+                            Saat ini jenis hard drive terbaru yang sangat populer adalah jenis SSD. Perbedaan SSD dengan jenis sebelumnya adalah hard drive yang satu ini tidak terdiri dari komponen yang bergerak. SSD menggunakan semikonduktor sebagai fungsi dalam penyimpanan data. SSD memiliki karakteristik di mana tidak ada komponen yang bergerak sehingga SSD mampu bekerja jauh lebih cepat dan kemungkinan terjadi kerusakan menjadi lebih kecil. Namun perlu diketahui bahwa SSD cenderung harganya lebih mahal jika dibanding jenis hard disk lainnya. Dalam perbandingan harga, HDD tentunya lebih murah jika dibandingkan
+                            dengan SSD tetapi memang kualitas SSD jauh lebih baik. Sebagai rekomendasi jika
+                            kalian menginginkan performa pada komputer kalian lebih cepat, pada sistem
+                            operasi kalian atur menggunakan SSD, namun untuk penyimpanan data kalian bisa
+                            memanfaatkan HDD yang memiliki kapasitas besar dan lebih murah.<br>
+                            </p>
+                                <figure class="gambar-tengah img-responsive">
+                                    <a href="assets/img/materi4/ssd.png"><img src="assets/img/materi4/ssd.png" class="img-responsive tengah" width="300px" alt="ssd" title="ssd"></a>
+                                    <figcaption>Gambar 3. &nbsp;&nbsp; ssd</figcaption>
+                                </figure>
+
+                            <p><strong>2.Optical Drive</strong>, Optical Drive atau perangkat cakram optis adalah sebuah penggerak cakram yang menggunakan sinar laser atau gelombang elektromagnetik untuk membaca dari CD atau menulis data ke dalam CD. Beberapa perangkat ini hanya dapat membaca data dari cakram-cakram tersebut, tetapi perangkat pada masa sekarang lebih mampu membaca dan menulis data ke dalam cakram optis. Perangkat yang mampu melakukan dua kegiatan tersebut dapat dikatakan sebagai pembakar cakram optis. Beberapa jenis seperti Cakram CD, DVD, dan Blu-ray adalah media optis yang mampu dibaca dan ditulis oleh perangkat tersebut. Seperti penjelasan di atas, Optical Drive hanya sebuah perangkat yang salah satunya untuk menulis data, kalian bisa menggunakan CD-ROM sebagai alat untuk menyimpan data. Dengan demikian kalian dapat memiliki back-up data jika terjadi kerusakan atau kehilangan data pada komputer kalian</p>
+                            <figure class="gambar-tengah img-responsive">
+                                <a href="assets/img/materi4/optical.png"><img src="assets/img/materi4/optical.png" class="img-responsive tengah" width="300px" alt="optical" title="optical"></a>
+                                <figcaption>Gambar 4. &nbsp;&nbsp; optical drive</figcaption>
+                            </figure>
+
+                            <p><strong>3.USB Flash Memory</strong>, USB Flash Memory alat penyimpanan data memori Sumber: Chotthanin Udomwariyawat/ freerangestock (2022) kilat tipe NAND yang memiliki alat penghubung USB yang terintegrasi. Flash Drive ini biasanya berukuran kecil, ringan, serta bisa dibaca dan ditulisi dengan mudah. Saat ini, kapasitas yang tersedia untuk USB Flash Drive mulai dari 8 GB sampai 2 TB. Besarnya kapasitas media ini tergantung dari teknologi memori kilat yang digunakan. USB Flash Drive memiliki banyak kelebihan dibandingkan alat penyimpanan data lainnya, khususnya CD-ROM atau Disket. Alat ini lebih cepat, kecil, dengan kapasitas lebih besar. Namun USB Flash Drive juga memiliki umur penyimpanan data yang singkat, biasanya ketahanan data pada USB Flash Drive ini rata-rata 5 tahun. Ini disebabkan oleh memori kilat yang digunakan tidak bertahan lama.</p>
+                            <figure class="gambar-tengah img-responsive">
+                                <a href="assets/img/materi4/usb.png"><img src="assets/img/materi4/usb.png" class="img-responsive tengah" width="300px" alt="usb" title="usb"></a>
+                                <figcaption>Gambar 5. &nbsp;&nbsp; usb</figcaption>
+                            </figure>
+
+                            
+                                                  
+    					</div>
+    				</div>
+                        
+                    
+                        
+    				</div><!-- kb-row-container-->
+    				
+                    <br><hr><br><p class="gambar-tengah"><a class="btn btn-primary btn-sm smoothScroll" href="evaluasi-4.html">Lanjut ke Evaluasi &raquo;</a></p>
+    			</div>
+    		</div>
+
+    		
+			</div><!-- col-md-offset-2 col-md-8 -->
+			<a href="#" class="back-to-top"><i class="fa fa-arrow-circle-o-up"></i> <br> ke atas</a>
+		</div><!-- row -->
+	</div><!-- kb02 --> 	
+  		
+	<div id="footerwrap">
+		<div class="container">
+			<p>Ari Yono | Media & Teknologi Pembelajaran</p>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/retina.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-func.js"></script>
+  </body>
+</html>

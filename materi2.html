@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ari Yono | Media & Teknologi Pembelajaran</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+   
+    <link href='assets/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/main.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/animate-custom.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/tambah-font.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/tambah-modis.css' rel='stylesheet' type='text/css'>
+    <link href="assets/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" media="screen">
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="assets/js/jmodis.js"></script>
+    <script type="text/javascript" src="assets/fancybox/jquery.fancybox.pack.js"></script>
+    <script>
+    $(document).ready(function() {
+        //semua links dengam akhiran ekstensi gambar
+        var thumbnails = 'a[href$=".gif"],a[href$=".jpg"],a[href$=".jpeg"],a[href$=".png"],a[href$=".GIF"],a[href$=".JPG"],a[href$=".JPEG"],a[href$=".PNG"]';
+
+        //menambah class "fancybox" ke thumbnails dan dijadikan satu group "rel" untuk mengaktifkan tombol previous/next
+        jQuery(thumbnails).addClass("fancybox").attr("rel","lightbox");
+
+        //memanggil fancybox
+        jQuery('.fancybox').fancybox({
+            padding: 0,
+            //mendapatkan alt dari img untuk title fancybox
+            beforeShow : function() {
+                var alt = this.element.find('img').attr('alt');
+                this.inner.find('img').attr('alt', alt);
+                this.title = alt;
+            }
+        });
+    });
+    </script>
+</head>
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+
+<div id="navbar-main">
+    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="menuIcon"><i class="fa fa-lg fa-list-ul"></i> Menu</span>
+            </button>
+        <span class="navbar-brand logoModis"><img src="assets/img/topi.png" width="63" height="46" class="noBayang"></span>        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+                <li><a href="index.html"><i class="glyphicon glyphicon-home"></i>&nbsp; Home</a></li>
+                <li><a href="pembelajaran.html"><i class="glyphicon glyphicon-book"></i>&nbsp; Pembelajaran</a></li>
+                <li><a href="evaluasi-daftar.html"><i class="glyphicon glyphicon-list"></i>&nbsp; Evaluasi</a></li>
+        </div>
+    </div>
+    </div>
+</div>
+
+    <!--INFO AWAL-->
+	<div id="kbwrap" class="kbwrap01">
+		<div class="row">	
+			<h3 class="centered">Komponen Perangkat Output</h3>
+			<br>
+		</div>
+	</div>
+	
+	<div class="container" id="kb01" name="kb01">
+		<br>
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8">
+			<div class="panel panel-default artikel" id="tujuan">
+				<div class="panel-body"> 
+                	
+					<h3 style="color: black; text-shadow: none;" class="page-header">Tujuan Pembelajaran</h3> 
+    				<p>Setelah kegiatan pembelajaran ini peserta didik diharapkan mampu:</p>
+					<ul>
+                        <li>Memahami komponen perangkat keras pada sistem komputer dengan baik.</li>
+                    </ul>
+                    <hr>
+                    <br><p class="gambar-tengah"><a class="btn btn-warning btn-sm smoothScroll" onclick="toggle('uraianMateri');" href="#uraianMateri">Lanjut ke Materi &raquo;</a></p>
+				</div>
+			</div>
+			
+			<div class="panel panel-default artikel" id="uraianMateri" style="display:none;">
+				<div class="panel-body">
+					<h3 class="page-header">Materi</h3>
+                    
+                    <div class="kb-row-container">
+                    <div class="kb-row" id="Jenis-jenisPengalamatanIPv4">
+    					<a href="#uraianMateri" class="kb-row-handle">Apa yang dimaksud dengan Perangkat Output ?</a>
+    					<div class="kb-row-content">
+
+    						<p><strong>Perangkat output atau perangkat keluaran</strong> merupakan perangkat keras yang digunakan untuk mengomunikasikan dan menyajikan hasil dari pengolahan data oleh sebuah sistem komputer dan diterima oleh pengguna.</p>
+
+
+    					</div>
+    				</div>
+    				
+    				<div class="kb-row" id="Jenis-jenis alamat">
+    					<a href="#Jenis-jenisPengalamatanIPv4" class="kb-row-handle">Contoh Perangkat Output</a>
+    					<div class="kb-row-content">
+                            <p>Berikut beberapa perangkat keluaran yang perlu kalian ketahui</p><br>
+                            <p><strong>1.Monitor</strong>, Monitor adalah sebuah perangkat output yang digunakan untuk mengirimkan hasil gambar atau display pada sebuah layar dan dilihat oleh pengguna. Monitor ini memiliki kriteria yang berbeda-beda seperti karakteristik, ukuran, dan tipenya yang menyesuaikan kebutuhan pengguna.</p>
+                                <figure class="gambar-tengah img-responsive">
+                                    <a href="assets/img/materi2/monitor.png"><img src="assets/img/materi2/monitor.png" class="img-responsive tengah" width="300px" alt="monitor" title="monitor"></a>
+                                    <figcaption>Gambar 1. &nbsp;&nbsp; monitor</figcaption>
+                                </figure>
+
+                            <p><strong>2.Printer</strong>, Printer adalah perangkat yang digunakan untuk menampilkan data berupa teks, gambar atau grafik dalam bentuk cetakan lembar pada kertas. Printer dapat dihubungkan dengan komputer melalui USB atau sinyal Wireless, selain itu printer juga perlu dihubungkan dengan arus listrik sebagai sumber dayanya. Saat pertama kali disambungkan ke komputer, pada beberapa sistem operasi kalian harus menginstal software driver printer terlebih dahulu agar printer itu dapat dikenali oleh komputer, namun jika kalian menggunakan sistem operasi Windows 10 atau macOS sebenarnya tidak perlu menginstal driver, kalian bisa langsung mencetaknya meskipun ada beberapa fitur yang tidak berjalan agar proses pencetakan dapat berjalan dengan maksimal, kalian tetap perlu menginstal drivernya.</p>
+                            <figure class="gambar-tengah img-responsive">
+                                <a href="assets/img/materi2/printer.png"><img src="assets/img/materi2/printer.png" class="img-responsive tengah" width="300px" alt="printer" title="printer"></a>
+                                <figcaption>Gambar 2. &nbsp;&nbsp; printer</figcaption>
+                            </figure>
+
+                            <p><strong>3.Proyektor</strong>, merupakan alat yang biasa digunakan untuk presentasi, perangkat ini dihubungkan dari komputer menggunakan kabel VGA atau HDMI untuk menampilkan apa yang ada pada monitor ke suatu screen (layar) ataupun dinding.</p>
+                            <figure class="gambar-tengah img-responsive">
+                                <a href="assets/img/materi2/proyektor.png"><img src="assets/img/materi2/proyektor.png" class="img-responsive tengah" width="300px" alt="proyektor" title="proyektor"></a>
+                                <figcaption>Gambar 3. &nbsp;&nbsp; proyektor</figcaption>
+                            </figure>
+
+                            <p><strong>4.Speaker</strong>, Speaker adalah perangkat keras sebagai alat bantu untuk menghasilkan suara. Jenis lain dari speaker adalah headset atau earphone, hanya saja speaker bisa didengarkan oleh banyak orang sedangkan headset atau earphone perorangan saja, penggunaan perangkat ini tentunya bergantung pada kebutuhan penggunanya. Kita dapat mendengarkan hasil keluaran berupa suara dari komputer melalui perangkat ini.</p>
+                            <figure class="gambar-tengah img-responsive">
+                                <a href="assets/img/materi2/speaker.png"><img src="assets/img/materi2/speaker.png" class="img-responsive tengah" width="300px" alt="speaker" title="speaker"></a>
+                                <figcaption>Gambar 4. &nbsp;&nbsp; speaker</figcaption>
+                            </figure>
+
+                            
+                                                  
+    					</div>
+    				</div>
+                        
+                    
+                        
+    				</div><!-- kb-row-container-->
+    				
+                    <br><hr><br><p class="gambar-tengah"><a class="btn btn-primary btn-sm smoothScroll" href="evaluasi-2.html">Lanjut ke Evaluasi &raquo;</a></p>
+    			</div>
+    		</div>
+
+    		
+			</div><!-- col-md-offset-2 col-md-8 -->
+			<a href="#" class="back-to-top"><i class="fa fa-arrow-circle-o-up"></i> <br> ke atas</a>
+		</div><!-- row -->
+	</div><!-- kb02 --> 	
+  		
+	<div id="footerwrap">
+		<div class="container">
+			<p>Ari Yono | Media & Teknologi Pembelajaran</p>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/retina.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-func.js"></script>
+  </body>
+</html>
